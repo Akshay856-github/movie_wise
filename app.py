@@ -144,11 +144,11 @@ def signup_page():
             USER_CREDENTIALS[new_username] = new_password
             st.success("Account created successfully! Please sign in now.")
             st.session_state.page = 'login'
-            st.experimental_rerun()
+
 
      if st.button("Back to Sign In"):
         st.session_state.page = 'login'
-        st.experimental_rerun()
+         
 
 # --------- App Routing Section ---------
 
