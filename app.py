@@ -66,7 +66,7 @@ def main_app():
     with col2:
      if st.button("Logout", key="logout", use_container_width=False):
         st.session_state.logged_in = False
-        st.experimental_rerun()
+        
 
     # App header and welcome message
     st.image("WatchWise Logo Design.png",width=120)
