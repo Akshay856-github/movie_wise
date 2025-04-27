@@ -111,13 +111,13 @@ def login_page():
         if username in USER_CREDENTIALS and USER_CREDENTIALS[username] == password:
             st.session_state.logged_in = True
             st.session_state.username = username
-            st.experimental_rerun()
+            # st.experimental_rerun()
         else:
             st.error("Invalid username or password.")
 
      if st.button("Sign Up"):
          st.session_state.page = 'signup'
-         st.experimental_rerun()
+         # st.experimental_rerun()
 
     st.markdown('</div>', unsafe_allow_html=True)
 
